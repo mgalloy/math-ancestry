@@ -1,0 +1,99 @@
+strict digraph {
+  node [shape=plaintext];
+  edge [color=gray];
+
+  pulleyn [label="Benjamin Pulleyn"];
+
+  mersenne [label="Marin Mersenne, 1611"];
+  roberval [label="Gilles Personne de Roberval"];
+
+  castelli [label="Benedetto Castelli, 1610"];
+  torricelli [label="Evangelista Torricelli"];
+
+  tartaglia [label="Nicolò Fontana Tartaglia"];
+  ricci [label="Ostilio Ricci"];
+  galilei [label="Galileo Galilei, 1585"];
+
+  viviani [label="Vincenzo Viviani, 1642"];
+  barrow [label="Isaac Barrow, 1652"];
+
+  newton [label="Isaac Newton, 1668"];
+  cotes [label="Roger Cotes, 1706"];
+  smith [label="Robert Smith, 1715"]
+  taylor [label="Walter Taylor, 1723"]
+  whisson [label="Stephen Whisson, 1742"]
+
+  postlethwaite [label="Thomas Postlethwaite, 1756"]
+  cranke [label="John Cranke, 1774"]
+  jones [label="Thomas Jones, 1782"]
+
+  bracken [label="Henry Bracken"]
+  waring [label="Edward Waring, 1760"]
+  dawson [label="John Dawson"]
+
+  sedgwick [label="Adam Sedgwick, 1811"]
+  hopkins [label="William Hopkins, 1830"]
+
+  cayley [label="Arthur Cayley, 1875"]
+  todhunter [label="Isaac Todhunter, 1848"]
+  routh [label="Edward Routh, 1857"]
+
+  forsyth [label="Andrew Russell Forsyth, 1881"]
+  darwin [label="George Darwin, 1871"]
+
+  whittaker [label="Edmund Whittaker, 1895"]
+
+  love [label="Augustus E. H. Love"]
+
+  hardy [label="G.H. Hardy, 1903"]
+  titchmarsh [label="Edward Charles Titchmarsh"]
+  shah [label="S.M. Shah, 1942"]
+  suffridge [label="Ted Suffridge, 1965"];
+  galloy [label="Michael Galloy, 1998"];
+
+  pulleyn -> newton;
+
+  mersenne -> roberval;
+  roberval -> barrow;
+
+  galilei -> castelli;
+  castelli -> torricelli;
+
+  torricelli -> viviani;
+
+  tartaglia -> ricci;
+  ricci -> galilei;
+  galilei -> viviani;
+  viviani -> barrow;
+  barrow -> newton;
+  
+  newton -> cotes;
+  cotes -> smith;
+  smith -> taylor;
+  taylor -> whisson;
+  whisson -> postlethwaite;
+
+  cranke -> jones;
+  postlethwaite -> jones;
+  jones -> sedgwick;
+
+  dawson -> sedgwick;
+  waring -> dawson;
+  bracken -> dawson;
+
+  hopkins -> cayley;
+  cayley -> forsyth;
+  forsyth -> whittaker;
+  hopkins -> todhunter;
+  todhunter -> routh;
+  sedgwick -> hopkins;
+  hopkins -> routh;
+  routh -> darwin;
+  darwin -> whittaker;
+  whittaker -> hardy;
+  love -> hardy;
+  hardy -> titchmarsh;
+  titchmarsh -> shah;
+  shah -> suffridge;
+  suffridge -> galloy;
+}
